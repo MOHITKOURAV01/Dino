@@ -1,6 +1,6 @@
-Jump-o-Saurus is a fun, lightweight, and fast-paced dinosaur game that automatically launches when there's no internet connection, similar to Chrome's offline game.
+-> Jump-o-Saurus is a fun, lightweight, and fast-paced dinosaur game that automatically launches when there's no internet connection, similar to Chrome's offline game.
 
-Features
+* Features:-
 
 Works offline
 
@@ -12,7 +12,7 @@ Auto-starts when no internet is detected
 
 Jump and dodge obstacles to survive
 
-How to Play
+* How to Play:-
 
 Open Jump-o-Saurus (it will launch automatically when there's no internet).
 
