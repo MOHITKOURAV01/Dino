@@ -1,5 +1,3 @@
-
-//board
 let board;
 let boardWidth = 750;
 let boardHeight = 250;
@@ -35,7 +33,7 @@ let cactus2Img;
 let cactus3Img;
 
 //physics
-let velocityX = -8; //cactus moving left speed
+let velocityX = -8; 
 let velocityY = 0;
 let gravity = .4;
 
@@ -47,11 +45,7 @@ window.onload = function() {
     board.height = boardHeight;
     board.width = boardWidth;
 
-    context = board.getContext("2d"); //used for drawing on the board
-
-    //draw initial dinosaur
-    // context.fillStyle="green";
-    // context.fillRect(dino.x, dino.y, dino.width, dino.height);
+    context = board.getContext("2d"); 
 
     dinoImg = new Image();
     dinoImg.src = "./img/dino.png";
@@ -69,7 +63,7 @@ window.onload = function() {
     cactus3Img.src = "./img/cactus3.png";
 
     requestAnimationFrame(update);
-    setInterval(placeCactus, 1000); //1000 milliseconds = 1 second
+    setInterval(placeCactus, 1000); 
     document.addEventListener("keydown", moveDino);
 }
 
@@ -82,7 +76,7 @@ function update() {
 
     //dino
     velocityY += gravity;
-    dino.y = Math.min(dino.y + velocityY, dinoY); //apply gravity to current dino.y, making sure it doesn't exceed the ground
+    dino.y = Math.min(dino.y + velocityY, dinoY); 
     context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height);
 
     //cactus
@@ -136,36 +130,36 @@ function placeCactus() {
         height: cactusHeight
     }
 
-    let placeCactusChance = Math.random(); //0 - 0.9999...
+    let placeCactusChance = Math.random(); 
 
-    if (placeCactusChance > .90) { //10% you get cactus3
+    if (placeCactusChance > .90) { 
         cactus.img = cactus3Img;
         cactus.width = cactus3Width;
         cactusArray.push(cactus);
     }
-    else if (placeCactusChance > .70) { //30% you get cactus2
+    else if (placeCactusChance > .70) { 
         cactus.img = cactus2Img;
         cactus.width = cactus2Width;
         cactusArray.push(cactus);
     }
-    else if (placeCactusChance > .50) { //50% you get cactus1
+    else if (placeCactusChance > .50) {
         cactus.img = cactus1Img;
         cactus.width = cactus1Width;
         cactusArray.push(cactus);
     }
 
     if (cactusArray.length > 5) {
-        cactusArray.shift(); //remove the first element from the array so that the array doesn't constantly grow
+        cactusArray.shift();
     }
 }
 
 function restartGame() {
-    location.reload(); // Reloads the page to reset the game
+    location.reload(); 
 }
 
 function detectCollision(a, b) {
-    return a.x < b.x + b.width &&   //a's top left corner doesn't reach b's top right corner
-           a.x + a.width > b.x &&   //a's top right corner passes b's top left corner
-           a.y < b.y + b.height &&  //a's top left corner doesn't reach b's bottom left corner
-           a.y + a.height > b.y;    //a's bottom left corner passes b's top left corner
+    return a.x < b.x + b.width &&   
+           a.x + a.width > b.x &&   
+           a.y < b.y + b.height &&  
+           a.y + a.height > b.y;    
 }
