@@ -2,15 +2,15 @@
 
 * Features:-
 
-Works offline
+Works offline.
 
-Unique flame-themed design
+Unique flame-themed design.
 
-Smooth animations and responsive controls
+Smooth animations and responsive controls.
 
-Auto-starts when no internet is detected
+Auto-starts when no internet is detected.
 
-Jump and dodge obstacles to survive
+Jump and dodge obstacles to survive.
 
 * How to Play:-
 
