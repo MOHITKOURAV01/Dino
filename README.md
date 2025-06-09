@@ -2,7 +2,7 @@
 
 * Features:-
 
-Works offline.
+Works offline
 
 Unique flame-themed design.
 
