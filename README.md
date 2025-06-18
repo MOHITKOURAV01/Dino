@@ -14,7 +14,7 @@ Jump and dodge obstacles to survive.
 
 * How to Play:-
 
-Open Jump-o-Saurus (it will launch automatically when there's no internet).
+Open Jump-o-Saurus... (it will launch automatically when there's no internet).
 
 Press the Spacebar to make the dinosaur jump.
 
