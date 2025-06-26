@@ -12,7 +12,7 @@ Auto-starts when no internet is detected.
 
 Jump and dodge obstacles to survive.
 
-* How to Play:-
+* How to Play :-
 
 Open Jump-o-Saurus... (it will launch automatically when there's no internet).
 
