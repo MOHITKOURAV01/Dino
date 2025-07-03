@@ -20,4 +20,4 @@ Press the Spacebar to make the dinosaur jump.
 
 Avoid obstacles to keep running.
 
-Challenge yourself to beat your high score...!
+Challenge yourself to beat your high score.!
