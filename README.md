@@ -4,7 +4,7 @@
 
 Works offline
 
-Unique flame-themed design.
+Unique flame-themed design..
 
 Smooth animations and responsive controls.
 
